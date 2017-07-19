@@ -1,0 +1,49 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Bank_lukasz_niescierewski.MainWindow"
+        Title="Bank" Height="390" Width="528.667">
+    <Window.Resources>
+        <Style x:Key="StylElementu" TargetType="ListBoxItem">
+            <Setter Property="ListBoxItem.Background" Value="LightGray" />
+            <Setter Property="ListBoxItem.Margin" Value="2" />
+            <Setter Property="ListBoxItem.Padding" Value="2" />
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="true">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Wybierz klienta:" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="97"/>
+        <ComboBox x:Name="CB_list_customers" Margin="112,39,99,0" VerticalAlignment="Top" SelectionChanged="CB_list_customers_SelectionChanged"/>
+        <Button x:Name="B_dodaj" Content="Dodaj" Margin="0,39,14,0" VerticalAlignment="Top" Click="B_add_Click" HorizontalAlignment="Right" Width="75"/>
+        <GroupBox Header="Konta klienta" Height="190" Margin="10,79,14,0" VerticalAlignment="Top">
+            <StackPanel>
+                <Button x:Name="B_dodaj_konto" Content="Dodaj konto" Margin="0,5,10,0" VerticalAlignment="Top" Click="B_add_account_Click" HorizontalAlignment="Right" Width="75"/>
+                <Button x:Name="B_usun_konto" Content="Usuń konto" Margin="0,5,10,0" VerticalAlignment="Top" Click="B_remove_account_Click" HorizontalAlignment="Right" Width="75"/>
+                <ListBox x:Name="LB_accounts" ItemContainerStyle="{StaticResource StylElementu}" Height="154" Margin="5,-47,95,0"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Obsługa konta" Height="56" Margin="10,280,14,0" VerticalAlignment="Top">
+            <StackPanel>
+
+                <Button x:Name="B_wplac" Content="Wpłać" Margin="0,5,65,0" VerticalAlignment="Top" Click="B_pay_Click" HorizontalAlignment="Right" Width="50"/>
+                <Button x:Name="B_wyplac" Content="Wypłać" Margin="0,-22,10,0" VerticalAlignment="Top" Click="B_payoff_Click" HorizontalAlignment="Right" Width="50"/>
+                <TextBox x:Name="TB_pay_payoff" Height="23" Margin="5,-22,130,0" TextWrapping="Wrap"/>
+            </StackPanel>
+
+        </GroupBox>
+
+
+        <DockPanel>
+            <ToolBar DockPanel.Dock="Top" VerticalAlignment="Top" Height="30" Margin="0,0,0,0">
+                <Button x:Name="B_save" Content="Zapisz"  Width="75" Click="B_save_Click"/>
+                <Button x:Name="B_read" Content="Wczytaj"  Width="75" Click="B_read_Click"/>
+            </ToolBar>
+        </DockPanel>
+
+
+    </Grid>
+</Window>
