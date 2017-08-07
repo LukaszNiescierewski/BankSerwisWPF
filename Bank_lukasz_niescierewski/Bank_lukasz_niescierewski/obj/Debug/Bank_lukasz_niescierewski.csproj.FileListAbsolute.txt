@@ -24,3 +24,17 @@ C:\Users\Łukasz\Source\Repos\Serwis Bankowy\Bank_lukasz_niescierewski\Bank_luka
 C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\bin\Debug\Bank_lukasz_niescierewski.exe.config
 C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\Bank_lukasz_niescierewski.exe
 C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\Bank_lukasz_niescierewski.pdb
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\Bank_lukasz_niescierewski.csprojResolveAssemblyReference.cache
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\AccountWindow.baml
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\CustomerWindow.baml
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\MainWindow.baml
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\AccountWindow.g.cs
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\CustomerWindow.g.cs
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\MainWindow.g.cs
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\App.g.cs
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\Bank_lukasz_niescierewski_MarkupCompile.cache
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\Bank_lukasz_niescierewski.g.resources
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\Bank_lukasz_niescierewski.Properties.Resources.resources
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\obj\Debug\Bank_lukasz_niescierewski.csproj.GenerateResource.Cache
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\bin\Debug\Bank_lukasz_niescierewski.exe
+C:\Users\Łukasz\Source\Repos\Serwis Bankowy\BankSerwisWPF\Bank_lukasz_niescierewski\Bank_lukasz_niescierewski\bin\Debug\Bank_lukasz_niescierewski.pdb

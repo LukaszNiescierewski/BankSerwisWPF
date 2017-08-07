@@ -26,14 +26,14 @@ namespace Bank_lukasz_niescierewski
         {
             this.account_customer.Clear();
         }
-        public void Serialization()
+       /* public void Serialization()
         {
             FileStream fs = new FileStream("lista_kont.bin", FileMode.Create);
             BinaryFormatter bf = new BinaryFormatter();
 
             bf.Serialize(fs, this.account_customer);
             fs.Close();
-        }
+        }*/
 
     }
 }

@@ -53,9 +53,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BinSerialization.cs" />
     <Compile Include="CreditCard.cs" />
     <Compile Include="Investment.cs" />
+    <Compile Include="ISerialization.cs" />
     <Compile Include="ROR.cs" />
+    <Compile Include="TxtSerialization.cs" />
     <Page Include="AccountWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

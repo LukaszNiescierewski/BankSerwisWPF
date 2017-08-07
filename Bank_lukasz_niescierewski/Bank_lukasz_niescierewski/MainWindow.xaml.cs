@@ -203,13 +203,15 @@ namespace Bank_lukasz_niescierewski
         private void B_save_Click(object sender, RoutedEventArgs e)
         {
             // serializacja - zapis listy klientow do pliku txt
-            StreamWriter sw = new StreamWriter("lista_klientow.txt");
-            sw.WriteLine(lk.ToString());
-            sw.Close();
+            ISerialization txtSave = new TxtSerialization();
+            txtSave.Serialized("lista_klientow.txt", lk);
 
             // serializacja - zapis listy klientów i słownika do pliku bin
-            lk.Serialization();
-            kk.Serialization();
+            ISerialization save = new BinSerialization();
+            save.Serialized("lista_klinetow.bin", lk.Customers);
+
+            ISerialization save2 = new BinSerialization();
+            save2.Serialized("lista_kont.bin", kk.List_Account);
         }
 
         private void B_read_Click(object sender, RoutedEventArgs e)
