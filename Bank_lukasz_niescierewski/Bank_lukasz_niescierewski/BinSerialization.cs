@@ -22,5 +22,10 @@ namespace Bank_lukasz_niescierewski
             bf.Serialize(fs, things);
             fs.Close();
         }
+
+        public void Serialized(string FileName, object things, Type a)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

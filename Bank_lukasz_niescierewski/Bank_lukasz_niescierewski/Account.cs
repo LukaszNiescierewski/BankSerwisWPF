@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Bank_lukasz_niescierewski
 {
     [Serializable]
-    class Account
+    public class Account
     {
         protected int n_number;
         protected Decimal dec_cash;

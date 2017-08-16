@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Bank_lukasz_niescierewski
 {
     [Serializable]
-    class ROR : Account
+    public class ROR : Account
     {
         public ROR(int number, decimal cash)
         {

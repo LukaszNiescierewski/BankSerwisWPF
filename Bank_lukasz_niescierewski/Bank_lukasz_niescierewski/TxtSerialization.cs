@@ -15,5 +15,10 @@ namespace Bank_lukasz_niescierewski
             sw.WriteLine(things.ToString());
             sw.Close();
         }
+
+        public void Serialized(string FileName, object things, Type a)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

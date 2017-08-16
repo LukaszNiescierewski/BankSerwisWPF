@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Bank_lukasz_niescierewski
 {
     [Serializable]
-    class CreditCard : Account
+    public class CreditCard : Account
     {
         public bool what_cash = false;
         public decimal cash_beginning=0;

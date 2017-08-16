@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
 
 namespace Bank_lukasz_niescierewski
 {
-    class ListAccount
+    public class ListAccount
     {
         private Dictionary<Account, Customer> account_customer = new Dictionary<Account, Customer>();
 

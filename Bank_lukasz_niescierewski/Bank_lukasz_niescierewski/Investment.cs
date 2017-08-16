@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Bank_lukasz_niescierewski
 {
     [Serializable]
-    class Investment : Account
+    public class Investment : Account
     {
         public bool first_time_pay = false;
         public bool first_payoff = false;

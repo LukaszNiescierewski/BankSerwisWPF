@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System.Xml.Serialization;
 
 namespace Bank_lukasz_niescierewski
 {
@@ -212,6 +213,32 @@ namespace Bank_lukasz_niescierewski
 
             ISerialization save2 = new BinSerialization();
             save2.Serialized("lista_kont.bin", kk.List_Account);
+
+            // serializacja - zapis listy klientów i słownika do pliku XML
+            ISerialization XmlSave = new XmlSerialization();
+            XmlSave.Serialized("lista_klientow.xml", lk.Customers, typeof(List<Customer>));
+
+            ISerialization XmlSave2 = new XmlSerialization();
+            XmlSave2.Serialized("lista_kont.xml", kk.List_Account, typeof(Dictionary<Account, Customer>));
+
+           /*
+            XmlSerializer xs = new XmlSerializer(typeof(List<Customer>));
+            TextWriter sw = null;
+            try
+            {
+                sw = new StreamWriter("lista_klientow.xml");
+                xs.Serialize(sw, lk.Customers);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Błąd!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            finally
+            {
+                if (sw != null)
+                    sw.Close();
+            }
+            */
         }
 
         private void B_read_Click(object sender, RoutedEventArgs e)

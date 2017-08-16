@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System.Xml.Serialization;
 
 namespace Bank_lukasz_niescierewski
 {
     
-    class ListCustomers
+    public class ListCustomers
     {
         private List<Customer> customers = new List<Customer>();
         
@@ -46,7 +47,7 @@ namespace Bank_lukasz_niescierewski
         {
             this.customers.Clear();
         }
-
+        /*
         public void Serialization ()
         {
             FileStream fs = new FileStream("lista_klinetow.bin", FileMode.Create);
@@ -54,7 +55,7 @@ namespace Bank_lukasz_niescierewski
             bf.Serialize(fs, customers);
             fs.Close();
         }
-               
+          */     
         public override string ToString()
         {
             string s = "";
