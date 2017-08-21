@@ -221,13 +221,27 @@ namespace Bank_lukasz_niescierewski
             ISerialization XmlSave2 = new XmlSerialization();
             XmlSave2.Serialized("lista_kont.xml", kk.List_Account, typeof(Dictionary<Account, Customer>));
 
-           /*
-            XmlSerializer xs = new XmlSerializer(typeof(List<Customer>));
+            List<Account> acc = new List<Account>();
+            List<Customer> cus = new List<Customer>();
+            foreach (KeyValuePair<Account, Customer> o in kk.List_Account)
+            {
+                acc.Add(o.Key);
+                cus.Add(o.Value);
+            }
+            ISerialization xml_dictionary_part1 = new XmlSerialization();
+            xml_dictionary_part1.Serialized("dictionary_part1.xml", acc, typeof(List<Account>));
+            acc.Clear();
+            ISerialization xml_dictionary_part2 = new XmlSerialization();
+            xml_dictionary_part2.Serialized("dictionary_part2.xml", cus, typeof(List<Customer>));
+            cus.Clear();
+
+            /*
+            XmlSerializer xs = new XmlSerializer(typeof(List<Account>);
             TextWriter sw = null;
             try
             {
-                sw = new StreamWriter("lista_klientow.xml");
-                xs.Serialize(sw, lk.Customers);
+                sw = new StreamWriter("dictionary_part1.xml");
+                xs.Serialize(sw, acc);
             }
             catch (Exception exception)
             {
@@ -236,9 +250,30 @@ namespace Bank_lukasz_niescierewski
             finally
             {
                 if (sw != null)
+                {
                     sw.Close();
-            }
-            */
+                    acc.Clear();
+                }
+            }*/
+
+            /*
+             XmlSerializer xs = new XmlSerializer(typeof(List<Customer>));
+             TextWriter sw = null;
+             try
+             {
+                 sw = new StreamWriter("lista_klientow.xml");
+                 xs.Serialize(sw, lk.Customers);
+             }
+             catch (Exception exception)
+             {
+                 MessageBox.Show(exception.Message, "Błąd!", MessageBoxButton.OK, MessageBoxImage.Error);
+             }
+             finally
+             {
+                 if (sw != null)
+                     sw.Close();
+             }
+             */
         }
 
         private void B_read_Click(object sender, RoutedEventArgs e)
