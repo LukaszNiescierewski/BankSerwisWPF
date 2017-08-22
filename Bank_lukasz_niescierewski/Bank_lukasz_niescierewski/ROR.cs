@@ -10,6 +10,12 @@ namespace Bank_lukasz_niescierewski
     [Serializable]
     public class ROR : Account
     {
+        public ROR()
+        {
+            base.n_number = 0;
+            base.dec_cash = 0;
+        }
+
         public ROR(int number, decimal cash)
         {
             base.n_number = number;

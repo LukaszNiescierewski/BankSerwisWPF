@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Account xsi:type="ROR">
+    <Number>1234</Number>
+    <Cash>1500</Cash>
+  </Account>
+  <Account xsi:type="ROR">
+    <Number>4321</Number>
+    <Cash>2500</Cash>
+  </Account>
+  <Account xsi:type="ROR">
+    <Number>1111</Number>
+    <Cash>3200</Cash>
+  </Account>
+  <Account xsi:type="Investment">
+    <Number>5678</Number>
+    <Cash>1000</Cash>
+    <first_time_pay>false</first_time_pay>
+    <first_payoff>false</first_payoff>
+    <cash_beginning>0</cash_beginning>
+    <sum_payoff>0</sum_payoff>
+  </Account>
+  <Account xsi:type="Investment">
+    <Number>8765</Number>
+    <Cash>500</Cash>
+    <first_time_pay>false</first_time_pay>
+    <first_payoff>false</first_payoff>
+    <cash_beginning>0</cash_beginning>
+    <sum_payoff>0</sum_payoff>
+  </Account>
+  <Account xsi:type="Investment">
+    <Number>2222</Number>
+    <Cash>200</Cash>
+    <first_time_pay>false</first_time_pay>
+    <first_payoff>false</first_payoff>
+    <cash_beginning>0</cash_beginning>
+    <sum_payoff>0</sum_payoff>
+  </Account>
+  <Account xsi:type="CreditCard">
+    <Number>3333</Number>
+    <Cash>1020</Cash>
+    <what_cash>false</what_cash>
+    <cash_beginning>0</cash_beginning>
+  </Account>
+  <Account xsi:type="CreditCard">
+    <Number>4444</Number>
+    <Cash>5000</Cash>
+    <what_cash>false</what_cash>
+    <cash_beginning>0</cash_beginning>
+  </Account>
+  <Account xsi:type="ROR">
+    <Number>61618</Number>
+    <Cash>999</Cash>
+  </Account>
+  <Account xsi:type="Investment">
+    <Number>66494</Number>
+    <Cash>981</Cash>
+    <first_time_pay>true</first_time_pay>
+    <first_payoff>true</first_payoff>
+    <cash_beginning>999</cash_beginning>
+    <sum_payoff>18</sum_payoff>
+  </Account>
+  <Account xsi:type="ROR">
+    <Number>55940</Number>
+    <Cash>4667</Cash>
+  </Account>
+  <Account xsi:type="Investment">
+    <Number>36107</Number>
+    <Cash>1011</Cash>
+    <first_time_pay>true</first_time_pay>
+    <first_payoff>true</first_payoff>
+    <cash_beginning>1111</cash_beginning>
+    <sum_payoff>100</sum_payoff>
+  </Account>
+  <Account xsi:type="CreditCard">
+    <Number>24220</Number>
+    <Cash>-223</Cash>
+    <what_cash>true</what_cash>
+    <cash_beginning>0</cash_beginning>
+  </Account>
+  <Account xsi:type="ROR">
+    <Number>79874</Number>
+    <Cash>444</Cash>
+  </Account>
+  <Account xsi:type="Investment">
+    <Number>19486</Number>
+    <Cash>424</Cash>
+    <first_time_pay>true</first_time_pay>
+    <first_payoff>true</first_payoff>
+    <cash_beginning>444</cash_beginning>
+    <sum_payoff>20</sum_payoff>
+  </Account>
+  <Account xsi:type="CreditCard">
+    <Number>10999</Number>
+    <Cash>-264</Cash>
+    <what_cash>true</what_cash>
+    <cash_beginning>0</cash_beginning>
+  </Account>
+</ArrayOfAccount>

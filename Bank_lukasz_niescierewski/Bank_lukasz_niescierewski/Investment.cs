@@ -15,6 +15,12 @@ namespace Bank_lukasz_niescierewski
         public decimal cash_beginning = 0;
         public decimal sum_payoff = 0;
 
+        public Investment()
+        {
+            base.n_number = 0;
+            base.dec_cash = 0;
+        }
+
         public Investment(int number, decimal cash)
         {
             base.n_number = number;

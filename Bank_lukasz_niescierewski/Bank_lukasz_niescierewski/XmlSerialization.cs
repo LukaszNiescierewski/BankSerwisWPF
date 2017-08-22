@@ -24,11 +24,11 @@ namespace Bank_lukasz_niescierewski
             {
                 sw = new StreamWriter(FileName);
                 xs.Serialize(sw, things);
-            }
+            }/*
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message, "Błąd!", MessageBoxButton.OK ,MessageBoxImage.Error);
-            }
+            }*/
             finally
             {
                 if (sw != null)

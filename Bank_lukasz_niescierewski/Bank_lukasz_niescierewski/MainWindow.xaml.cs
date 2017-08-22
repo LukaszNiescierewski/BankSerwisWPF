@@ -204,10 +204,12 @@ namespace Bank_lukasz_niescierewski
         private void B_save_Click(object sender, RoutedEventArgs e)
         {
             // serializacja - zapis listy klientow do pliku txt
+
             ISerialization txtSave = new TxtSerialization();
             txtSave.Serialized("lista_klientow.txt", lk);
 
             // serializacja - zapis listy klientów i słownika do pliku bin
+
             ISerialization save = new BinSerialization();
             save.Serialized("lista_klinetow.bin", lk.Customers);
 
@@ -215,28 +217,29 @@ namespace Bank_lukasz_niescierewski
             save2.Serialized("lista_kont.bin", kk.List_Account);
 
             // serializacja - zapis listy klientów i słownika do pliku XML
+
             ISerialization XmlSave = new XmlSerialization();
             XmlSave.Serialized("lista_klientow.xml", lk.Customers, typeof(List<Customer>));
 
-            ISerialization XmlSave2 = new XmlSerialization();
-            XmlSave2.Serialized("lista_kont.xml", kk.List_Account, typeof(Dictionary<Account, Customer>));
+
+            // zapis słownika do XML
 
             List<Account> acc = new List<Account>();
             List<Customer> cus = new List<Customer>();
             foreach (KeyValuePair<Account, Customer> o in kk.List_Account)
             {
-                acc.Add(o.Key);
+                acc.Add(o.Key as Account);
                 cus.Add(o.Value);
             }
-            ISerialization xml_dictionary_part1 = new XmlSerialization();
-            xml_dictionary_part1.Serialized("dictionary_part1.xml", acc, typeof(List<Account>));
-            acc.Clear();
+           
             ISerialization xml_dictionary_part2 = new XmlSerialization();
             xml_dictionary_part2.Serialized("dictionary_part2.xml", cus, typeof(List<Customer>));
             cus.Clear();
+            
+            // Serializacja do pliku XML przy różnych typach obiektów
 
-            /*
-            XmlSerializer xs = new XmlSerializer(typeof(List<Account>);
+            XmlSerializer xs = new XmlSerializer(typeof(List<Account>), 
+                new Type[] { typeof(ROR), typeof(Investment), typeof(CreditCard) });
             TextWriter sw = null;
             try
             {
@@ -254,26 +257,7 @@ namespace Bank_lukasz_niescierewski
                     sw.Close();
                     acc.Clear();
                 }
-            }*/
-
-            /*
-             XmlSerializer xs = new XmlSerializer(typeof(List<Customer>));
-             TextWriter sw = null;
-             try
-             {
-                 sw = new StreamWriter("lista_klientow.xml");
-                 xs.Serialize(sw, lk.Customers);
-             }
-             catch (Exception exception)
-             {
-                 MessageBox.Show(exception.Message, "Błąd!", MessageBoxButton.OK, MessageBoxImage.Error);
-             }
-             finally
-             {
-                 if (sw != null)
-                     sw.Close();
-             }
-             */
+            }
         }
 
         private void B_read_Click(object sender, RoutedEventArgs e)

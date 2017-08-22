@@ -13,6 +13,12 @@ namespace Bank_lukasz_niescierewski
         public bool what_cash = false;
         public decimal cash_beginning=0;
 
+        public CreditCard()
+        {
+            base.n_number = 0;
+            base.dec_cash = 0;
+        }
+
         public CreditCard(int number, decimal cash)
         {
             base.n_number = number;

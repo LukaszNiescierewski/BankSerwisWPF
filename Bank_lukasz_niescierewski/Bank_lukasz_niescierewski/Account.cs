@@ -13,7 +13,11 @@ namespace Bank_lukasz_niescierewski
         protected int n_number;
         protected Decimal dec_cash;
 
-        public Account() { }
+        public Account()
+        {
+            this.n_number = 0;
+            this.dec_cash=0;
+        }
 
         public Account (int n_number, decimal dec_cash)
         {
